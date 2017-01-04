@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrismTextToSpeech.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    Title="MainPage"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+        <Entry x:Name="txtData" Text="{Binding SpeakText, Mode=TwoWay}" />
+        <Button
+            x:Name="btnSpeak"
+            Command="{Binding SpeakCommand}"
+            Text="Speak" />
+    </StackLayout>
+</ContentPage>

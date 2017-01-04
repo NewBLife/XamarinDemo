@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TextToSpeechDemo.TestPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+        <Entry x:Name="txtData" />
+        <Button
+            x:Name="btnSpeak"
+            Clicked="btnSpeak_Clicked"
+            Text="Speak" />
+    </StackLayout>
+</ContentPage>
